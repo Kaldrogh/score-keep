@@ -1,0 +1,69 @@
+.button {
+  background-color: transparent;
+  border: 1px solid #555555;
+  color: #555555;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1;
+  margin-left: 1.3rem;
+  outline: none;
+  padding: 1.3rem;
+  transition: background .2s ease, transform .2s ease, color .2s ease;
+
+  &:hover, &:focus {
+    background-color: #e8e8e8;
+  }
+
+  &:active {
+    background-color: #cccccc;
+    transform: scale(1.1);
+  }
+}
+
+.button--round {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.button--position-1 {
+  border: 1px solid $greenButton;
+  color: $greenButton;
+
+  &:hover, &:focus {
+    background-color: $greenAlt;
+    color: white;
+  }
+
+  &:active {
+    background-color: darken($greenAlt, 5%);
+  }
+}
+
+.button--position-2 {
+  border: 1px solid $blueButton;
+  color: $blueButton;
+
+  &:hover, &:focus {
+    background-color: $blueAlt;
+    color: white;
+  }
+
+  &:active {
+    background-color: darken($blueAlt, 5%);
+  }
+}
+
+.button--position-3 {
+  border: 1px solid $redButton;
+  color: $redButton;
+
+  &:hover, &:focus {
+    background-color: $redAlt;
+    color: white;
+  }
+
+  &:active {
+    background-color: darken($redAlt, 5%);
+  }
+}
